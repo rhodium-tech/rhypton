@@ -1,0 +1,70 @@
+Source: rhypton
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@rhypton.org>
+Uploaders: Holger Schinzel <holger@rhypton.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.47),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.47),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.47),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.47),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.47),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.47),
+ libminiupnpc8-dev | libminiupnpc-dev,
+ qt4-qmake, libqt4-dev,
+ qttools5-dev-tools, qttools5-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python,
+ libzmq3-dev
+Standards-Version: 3.9.2
+Homepage: https://www.rhypton.org/
+Vcs-Git: git://github.com/rhyptonpay/rhypton.git
+Vcs-Browser: https://github.com/rhyptonpay/rhypton
+
+Package: rhyptond
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ RHYPTON is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. RHYPTON uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. RHYPTON Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, rhyptond, and the CLI tool
+ rhypton-cli to interact with the daemon.
+
+Package: rhypton-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ RHYPTON is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. RHYPTON uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. RHYPTON Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides RHYPTON-Qt, a GUI for RHYPTON based on Qt.
+
+Package: rhypton-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ RHYPTON is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. RHYPTON uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. RHYPTON Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides rhypton-tx, a command-line transaction creation
+ tool which can be used without a rhypton daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

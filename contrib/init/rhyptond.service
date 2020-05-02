@@ -1,0 +1,22 @@
+[Unit]
+Description=RHYPTON's distributed currency daemon
+After=network.target
+
+[Service]
+User=rhyptoncore
+Group=rhyptoncore
+
+Type=forking
+PIDFile=/var/lib/rhyptond/rhyptond.pid
+ExecStart=/usr/bin/rhyptond -daemon -pid=/var/lib/rhyptond/rhyptond.pid \
+-conf=/etc/rhyptoncore/rhypton.conf -datadir=/var/lib/rhyptond -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

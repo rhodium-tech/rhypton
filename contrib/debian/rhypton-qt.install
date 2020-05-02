@@ -1,0 +1,6 @@
+usr/local/bin/rhypton-qt usr/bin
+share/pixmaps/rhypton32.xpm usr/share/pixmaps
+share/pixmaps/rhypton16.xpm usr/share/pixmaps
+share/pixmaps/rhypton128.png usr/share/pixmaps
+debian/rhypton-qt.desktop usr/share/applications
+debian/rhypton-qt.protocol usr/share/kde4/services/

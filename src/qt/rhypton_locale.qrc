@@ -1,0 +1,25 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ar">locale/rhypton_ar.qm</file>
+        <file alias="bg">locale/rhypton_bg.qm</file>
+        <file alias="de">locale/rhypton_de.qm</file>
+        <file alias="en">locale/rhypton_en.qm</file>
+        <file alias="es">locale/rhypton_es.qm</file>
+        <file alias="fi">locale/rhypton_fi.qm</file>
+        <file alias="fr">locale/rhypton_fr.qm</file>
+        <file alias="it">locale/rhypton_it.qm</file>
+        <file alias="ja">locale/rhypton_ja.qm</file>
+        <file alias="ko">locale/rhypton_ko.qm</file>
+        <file alias="nl">locale/rhypton_nl.qm</file>
+        <file alias="pl">locale/rhypton_pl.qm</file>
+        <file alias="pt">locale/rhypton_pt.qm</file>
+        <file alias="ru">locale/rhypton_ru.qm</file>
+        <file alias="sk">locale/rhypton_sk.qm</file>
+        <file alias="sv">locale/rhypton_sv.qm</file>
+        <file alias="th">locale/rhypton_th.qm</file>
+        <file alias="tr">locale/rhypton_tr.qm</file>
+        <file alias="vi">locale/rhypton_vi.qm</file>
+        <file alias="zh_CN">locale/rhypton_zh_CN.qm</file>
+        <file alias="zh_TW">locale/rhypton_zh_TW.qm</file>
+    </qresource>
+</RCC>
